@@ -23,6 +23,8 @@ recpients=['email1@gmail.com','email2@gmail']
 </pre>
 
 #Usage
+<pre>
 python gbackup.py -m full #Full backup
 python gbackup.py -m incremental #Incremental Backup
 python gbackup.py -s password.txt -l /root/backup #Search for a file in zip files recursively
+</pre>
