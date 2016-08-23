@@ -50,7 +50,6 @@ def backup_full(filename):
 def backup_incremental(filename):
     modified = datetime.fromtimestamp(os.path.getmtime(filename)).strftime('%d-%m-%Y')
     if int(datetime.fromtimestamp(os.path.getmtime(filename)).strftime('%d')) >= int(datetime.now().strftime("%d"))-2:
-        print '%s - OK' % filename
         try:
             backup_zip.write(filename)
             msg = '%s - OK' % filename
