@@ -114,8 +114,7 @@ def save_gdrive():
         backupfilegdrive.Upload()
         logging.info(result[0])
     except Exception as e:
-        print str(e)
-        logging.warning(result[2])
+        logging.warning(result[2]+str(e))
 
 def sendemail():
     msg = email.mime.Multipart.MIMEMultipart()
