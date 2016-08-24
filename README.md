@@ -1,6 +1,11 @@
 # GamblerBackup
 GamblerBackup - Simple backup system multiplatform
 
+#Dependencies
+<pre>
+pip install pydrive
+</pre>
+
 #Origin
 Use the file dirs.txt to put your origins folders
 <pre>
@@ -21,6 +26,7 @@ password=P4$$W0RD
 subject=Backup Client Brazil #Subject of the e-mail
 recpients=['email1@gmail.com','email2@gmail'] 
 </pre>
+
 #Google drive configuration
 <pre>
 Go to <a href="https://console.developers.google.com/iam-admin/projects">APIs Console</a> and make your own project.
@@ -38,6 +44,7 @@ Click ‘Download JSON’ on the right side of Client ID to download client_secr
 
 The downloaded file has all authentication information of your application. Rename the file to “client_secrets.json” and place it in your working directory.
 </pre>
+
 #Usage
 <pre>
 python gbackup.py -m full #Full backup
