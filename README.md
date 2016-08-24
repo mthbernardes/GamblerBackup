@@ -4,6 +4,7 @@ GamblerBackup - Simple backup system multiplatform
 #Dependencies
 <pre>
 pip install pydrive
+pip install pyinstaller
 </pre>
 
 #Origin
