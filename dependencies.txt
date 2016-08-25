@@ -1,0 +1,4 @@
+pydrive
+pyinstaller
+ConfigParser
+email
